@@ -75,6 +75,25 @@
     VGG->GoogleNet->ResNet->MobileNet
 ```    
  
-## 2.分类数据
+## 2.数据与模型准备
+### 任务：基于嘴唇的表情识别
+```
+    公开数据集：KDEF,RaFD,EmotioNet
+    人脸数据集：Celeba
+    
+ ```
+### 数据预处理
+```
+    OpenCV 人脸检测
+    Dlib关键点检测
+    嘴唇区域裁剪
+```
+### 模型选择
+```
+    Google 分组卷积模型MobileNet
+        28层，Depthwise和Pointwise组成，3x3卷积
+        结构简单，性能稳定
+        预训练模型多
+```
+## 3.模型训练与测试
 ### 
-
